@@ -1,0 +1,297 @@
+:root {
+    --text-color: black; /* Set text color */
+    --link-color: white; /* Set color for hyperlinks */
+    --background-color: white; /* Set the background color */
+    --font-size: 17px; /* Set the base font size */
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem; 
+}
+
+body {
+    background: var(--background-color);
+    padding: 0;
+    margin: 0;
+}
+
+hr {
+    border: none; /* Removes the default border */
+    border-top: 2px solid rgb(86, 84, 84); /* Adds a custom border (line) */
+    margin: 20px 0; /* Adds vertical spacing around the line */
+}
+
+section {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+section:nth-of-type(odd) {
+    background-color: whitesmoke;
+}
+
+section:nth-of-type(even) {
+    background-color: rgb(211, 208, 208);
+}
+
+nav {
+    background-color: #777777;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    height: 4.5rem;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+nav .left a {
+    color: var(--text-color);
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 10px;
+}
+
+nav .right a {
+    color: var(--text-color);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 3px;
+    padding: 5px;
+}
+
+nav .right a:hover {
+    color: var(--link-color);
+    transition: color 0.5s;
+}
+
+h1 {
+    color: var(--text-color);
+    text-align: center;
+    font-weight: bold;
+    font-family: Garamond, serif;
+    font-size: 40px;
+    margin-top: 4.5rem;
+}
+
+h2 {
+    color: var(--text-color);
+    text-align: center;
+    font-family: Garamond, serif;
+    font-size: 30px;
+}
+
+h3 {
+    color: var(--text-color);
+    text-align: center;
+    font-family: Garamond, serif;
+    font-size: 25px;
+}
+
+.bio {
+    color: var(--text-color);
+    text-align: justify;
+    font-family: Garamond, serif;
+    font-size: var(--font-size);
+    line-height: 1.3;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.bio-2 {
+    color: var(--text-color);
+    text-align: justify;
+    font-family: Garamond, serif;
+    font-size: var(--font-size);
+    line-height: 1.3;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.work {
+    color: var(--text-color);
+    text-align: justify;
+    font-family: Garamond, serif;
+    font-size: var(--font-size);
+    line-height: 1.3;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.work-2 {
+    color: var(--text-color);
+    text-align: justify;
+    font-family: Garamond, serif;
+    font-size: var(--font-size);
+    line-height: 1.3;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+ul {
+    color: var(--text-color);
+    font-family: Garamond, serif;
+    font-size: var(--font-size);
+    line-height: 1.3;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.headshot img {
+    width: 300px; /* Sets the width of the picture */
+    height: 300px; /* Make sure width and height are equal */
+    border-radius: 50%; /* Makes the image appear circular */
+    object-fit: cover; /* Ensures the image fits well within the bounds */
+    margin: 2.5rem; /* Creates space between image and text */
+    box-shadow: 1px 1px 1px black; /* Create a shadow for the image */
+    display: block; /* Centers the image */
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+}
+
+i {
+    font-size: 2.5rem;
+    transition: transform 0.4s ease, color 0.4s ease;
+    color: #519f7d;
+    margin: 10px;
+}
+
+.skills-icons i:hover {
+    color: #81cfae;
+    transform: scale(1.2);
+}
+
+.skills-icons {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.social-media {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.social-media i:hover {
+    color: #a6f7d4;
+    transform: scale(1.2);
+}
+
+.projects {
+    padding: 20px;
+    text-align: center;
+}
+
+.projects-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+.projects::-webkit-scrollbar {
+    height: 10px;
+}
+
+.projects::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+}
+
+.projects::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+}
+
+.project-card {
+    flex-shrink: 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    padding: 15px;
+}
+
+.project-card:nth-child(odd) {
+    background-color: #c7f0de;
+}
+
+.project-card:nth-child(even) {
+    background-color: #dcffee;
+}
+
+.project-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+}
+
+.project-card a{
+    color: var(--text-color);
+}
+
+.contact-form {
+    display: grid;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left; 
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column; 
+    /* Places text boxes underneath titles */
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    /* Makes the header for each text box bold */
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    /* Formats the text within each text box */
+}
+
+input:focus, textarea:focus {
+    border-color: #007bff;
+    outline: none;
+     /* Makes the text box border blue when clicked */
+}
+
+textarea {
+    resize: vertical;
+    /* Allows the user to only resize the message text box vertically */
+}
+
+.submit-button {
+    background-color: #81cfae;
+    color: var(--text-color);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: var(--background-color) 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #519f7d;
+}

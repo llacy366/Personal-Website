@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="st.css">
+    <script src="https://kit.fontawesome.com/a817e29d1e.js" crossorigin="anonymous"></script>
+    <title>My Personal Website</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <a href="#about-section">Luke Lacy</a>
+            </div>
+            <div class="right">
+                <a href="#about-section">About</a>
+                <a href="#experience-section">Work Experience</a>
+                <a href="#projects-section">Projects</a>
+                <a href="#skills-section">Skills</a>
+                <a href="#leave-message-section">Leave a Message!</a>
+            </div>
+        </nav>
+    </header>
+    <section id="about-section">
+        <h1>Hey Everyone!</h1>
+        <div class="headshot">
+            <img src="./images/luke_picture.png" alt="Luke Lacy">
+        </div>
+        <div class="about-me"></div>
+        <p class="bio"> 
+            I'm Luke, a current Regent University student and computer science major.
+            I'm extremely passionate about programming and software engineering, 
+            specifically frontend development. I am equipped with a love of learning and an eagerness to experiment that sets me apart from the rest!
+        </p>
+        <br>
+        <p class="bio-2"> 
+            Outside of academics and coding, I enjoy playing basketball, listening to music,
+            spending time with my friends, and going to the gym. One thing I really love, specifically about music, is sharing certain songs I like
+            with my friends and seeing their first reactions. It always brings me joy when they love the songs and add them to their playlists.
+        </p>
+        </div>
+        <div class="social-media">
+            <a href="https://www.instagram.com/luke_lacy_/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/luke-lacy-627b8b353/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/llacy366" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+    </section>
+    <hr>
+    <section id="experience-section">
+        <h2>Work Experience</h2>
+        <p class="work">
+            The only formal work experience I have is working at Ross 
+            during Summer 2024 and Winter Break 2024-2025. During my time there, there were a list of tasks I accomplished:
+            <ul>
+                <br>
+                <li>I delivered exceptional customer service by helping shoppers find the products they were looking for, answering questions/clearing up confusion, and resolving issues on my own quickly and effectively.</li>
+                <li>I handled high-pressure retail environments during busy seasons, maintaining a positive attitude and making sure checkout lines moved quickly and efficienly.</li>
+                <li>I operated point-of-sale systems accurately, managing transactions with pinpoint precision.</li>
+                <li>I helped keep the store well-organized by restocking shelves, maintaining displays, and upholding the standard for cleanliness and presentation.</li>
+                <li>I collaborated with team members to meet daily sales targets, showing strong communication and teamwork skills.</li>
+            </ul>
+        </p>
+        <br>
+        <p class="work-2">
+            I do have ample experience using high-level languages such as Python, JavaScript, HTML, and CSS from classes I've taken and personal projects I've worked on.
+            I've taken classes such as Data Structures and Algorithms, Programming in C++, Linear Algebra,
+            Mobile and Smart Computing, Parallel and Distributive Programming,
+            Computer Architecture, Software Engineering, and more. From these classes, I've learned important
+            coding practices that I've implemented in my personal projects, giving me a well-rounded
+            and versatile tool kit. You can find the projects I've completed and skills I have in the sections below!
+        </p>
+    </section>
+    <hr>
+    <section id="projects-section">
+        <h2>Projects</h2>
+    <br>
+    <div class="projects">
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="./images/calculator_picture.png" alt="Calculator Picture">
+                <a href="https://github.com/llacy366/Calculator-App" target="_blank">
+                    <h3>Calculator</h3>
+                </a>
+                <p>For this project, I made a calculator that can perform the 4 basic operations: addition, subtraction, multiplication, and division.</p>
+            </div>
+            <div class="project-card">
+                <img src="./images/ttt_picture.png" alt="Tic-Tac-Toe">
+                <a href="https://github.com/llacy366/Tic-Tac-Toe" target="_blank">
+                    <h3>Tic-Tac-Toe Game</h3>
+                </a>
+                <p>For this project, I created a simple Tic-Tac-Toe game within the terminal. The project is considered unfinished because there are a few bugs with the code. However, it is necessary to add this project as it is a project I'm working on.</p>
+            </div>
+            <div class='project-card'>
+                <img>
+                <a>
+                    <h3>Project 3</h3>
+                </a> 
+                <p>Description of Project 3</p>
+            </div>
+            <div class="project-card">
+                <img>
+                <a>
+                    <h3>Project 4</h3>
+                </a> 
+                <p>Description of Project 4</p>
+            </div>
+            <div class="project-card">
+                <img>
+                <a>
+                    <h3>Project 5</h3>
+                </a> 
+                <p>Description of Project 5</p> 
+            </div>
+        </div>
+    </div>
+    </section>
+    <hr>
+    <section id="skills-section">
+        <h2>Skills</h2>
+        <div class="skills-icons">
+            <i class="fa-brands fa-python"></i>
+            <i class="fa-brands fa-js"></i>
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css"></i>
+            <i class="fa-brands fa-github-alt"></i>
+            <i class="fa-brands fa-node-js"></i>
+        </div>
+    </section>
+    <hr>
+    <section id="leave-message-section">
+        <h2>Leave a Message!</h2>
+        <form class="contact-form" action="form_handler.py" method="POST">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name:">
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email:">
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message:</label>
+                <textarea type="message" id="message" rows="4" required placeholder="Enter your message:"></textarea>
+            </div>
+            <button type="submit" class="submit-button">Send Message</button>
+        </form>
+    </section>
+</body>
